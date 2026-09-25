@@ -1,9 +1,9 @@
 // VulnStack 漏洞数据 - 包含列表卡片数据和详情数据
 // 图片引用线上原始站点 URL，无需复制文件
 
-const SITE = 'http://vulnstack.qiyuanxuetang.net'
-const VULN_IMG = `${SITE}/media/vuln/vuln`
-const SCR_IMG = `${SITE}/media/vuln/screenshot`
+const SITE = ''
+const VULN_IMG = `media/vuln/vuln`
+const SCR_IMG = `media/vuln/screenshot`
 
 // 通用文件哈希（蓝队防御系列共用）
 const COMMON_MD5 = 'e16fd0f6a5104aef0dfa73460afff0e8'
@@ -408,5 +408,4 @@ export function getVulnById(id) {
 
 // 站点 URL 常量（供组件使用）
 export const SITE_URL = SITE
-export const WWEQ_IMG = `${SITE}/static/images/wweq.jpg`
-export const CAPTCHA_IMG = `${SITE}/vuln/get_img_code.png`
+export const WWEQ_IMG = `static/images/wweq.jpg`
