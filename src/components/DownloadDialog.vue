@@ -9,9 +9,6 @@
     <span>百度网盘：</span>
     <a :href="downloadUrl" target="_blank">{{ displayName }}</a>
     <br /><br />
-    <span>密码:</span>
-    <b>{{ downloadPass }}</b>
-    <br /><br />
     <button class="btn btn-primary" style="margin-left: 45%;" @click="closeTwo">关闭</button>
   </div>
 </template>
@@ -28,7 +25,6 @@ const emit = defineEmits(['close'])
 
 const showTwo = ref(false)
 const downloadUrl = ref('https://pan.baidu.com/s/1ac4ldaYBiMLiMs7iVqGbRA?pwd=s3wd')
-const downloadPass = ref('s3wd')
 const displayName = computed(() => props.fileName || '百度网盘下载')
 
 watch(() => props.visible, (val) => {
